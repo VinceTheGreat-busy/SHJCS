@@ -1,0 +1,23 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+#main2 {
+      background-color: rgb(247, 53, 28);
+      color: white;
+}
+
+li a {
+      padding: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;;
+}
+
+li:hover, a:hover {
+      background-color: white;
+      color: black;
+      transition: 0.2s;;
+}

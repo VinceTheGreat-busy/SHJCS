@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sacred Heart of Jesus Catholic School</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="index.css">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body>
+      <nav class="navbar navbar-expand bg-danger">
+            <div class="container-fluid p-2 justify-content-start">
+                  <h4>
+                        <img src="logo.jpg" alt="logo" style="width:60px; padding: 5px;"class="rounded-pill">
+                  </h4>
+            </div>
+            <div class="container-fluid p-2 justify-content-end">
+                  <ul class="navbar-nav p-3">
+                        <li class="list-item">
+                              <h4><a class="navbar-link" href="index.html">Home</a></h4>
+                        </li>
+                        <li class="list-item">
+                              <h4><a class="navbar-link" href="about.html">About Us</a></h4>
+                        </li>
+                        <li class="list-item">
+                              <h4><a class="navbar-link" href="contact.html">Contact</a></h4>
+                        </li>
+                  </ul>
+            </div>
+      </nav>
+            
+      <div class="containter-fluid">
+            <div class="row">
+                  <div class="col-sm-8 p-5 mt-5" id="main">
+                        <h1 class="text-center">Welcome to Sacred Heart of Jesus Catholic School.</h1>
+                        <div class="container" id="main2">
+<pre>
+<h4>
+      <b>✓</b> PAASCU Accreditted Level III 
+
+      <b>✓</b> Free Education for students 
+        from Public School (SHS only) 
+
+      <b>✓</b>STRANDS
+        - Science, Technology, Engineering, and Mathematics (STEM)
+        - Humanities and Social Sciences (HUMSS)
+        - Information Communication Technology (ICT)
+        - Food and Beverage (FnB)
+        - Accountancy and Business Management (ABM)
+</h4>
+</pre>
+                        </div>
+                        <div id="enroll" class="container-fluid justify-content-center">
+                              <div class="d-grid justify-content-center">
+                                    <button class="btn btn-success" style="width: 300px;" data-bs-toggle="modal" data-bs-target="#myModal">Enroll Now!</button>
+                              </div>
+                              <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                          <div class="modal-content">
+                                                <div class="modal-header">
+                                                      <h4 class="modal-title text-info">Enroll in SHJCS.</h4>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                                </div>
+
+                                                <div class="modal-body">
+                                                      <form action="#">
+                                                            <div class="mb-3 mt-3">
+                                                                  <label for="email" class="form-label">Email:</label>
+                                                                  <input type="email" class="form-control" id="email" name="email" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                  <label for="Uname" class="form-label">Name of Student:</label>
+                                                                  <input type="text" class="form-control" id="Uname" name="Uname" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                  <label for="phone" class="form-label">Phone:</label>
+                                                                  <input type="tel" class="form-control" id="phone" name="phone" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                  <label for="pic" class="form-label">Picture: </label>
+                                                                  <input type="file" class="form-control" id="pic" name="picture" required>
+                                                            </div>
+                                                            <div class="mb-3">
+                                                                  <label for="gradelvl" class="form-label">Grade Level:</label>
+                                                                  <select onchange="sell(this)" id="gradelvl" class="form-control" name="gradelvl" required>
+                                                                        <option></option>
+                                                                        <option>Nursery</option>
+                                                                        <option>Kinder</option>
+                                                                        <option>Grade 1</option>
+                                                                        <option>Grade 2</option>
+                                                                        <option>Grade 3</option>
+                                                                        <option>Grade 4</option>
+                                                                        <option>Grade 5</option>
+                                                                        <option>Grade 6</option>
+                                                                        <option>Grade 7</option>
+                                                                        <option>Grade 8</option>
+                                                                        <option>Grade 9</option>
+                                                                        <option>Grade 10</option>
+                                                                        <option value="Grade 11">Grade 11</option>
+                                                                        <option value="Grade 12">Grade 12</option>
+                                                                  </select>
+                                                            </div>
+                                                            <div class="mb-3" id="ifYes" style="display:none;">
+                                                                  <label for="strand" class="form-label">Strand:</label>
+                                                                  <select id="strand1" class="form-control" name="strand" required>
+                                                                        <option></option>
+                                                                        <option>STEM</option>
+                                                                        <option>HUMSS</option>
+                                                                        <option>ICT</option>
+                                                                        <option>FnB</option>
+                                                                        <option>ABM</option>
+                                                                  </select>
+                                                            </div>
+                                                            <div class="mb-3 d-grid">
+                                                                  <button type="button" id="enroll" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#MyModal">Enroll</button>
+                                                            </div>
+                                                      </form>
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                      <button style="width: 100%;" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                  
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="modal" id="MyModal">
+                                    <div class="modal-dialog">
+                                          <div class="modal-content">
+                                                <div class="modal-header">
+                                                      <div>
+                                                            <h5>Profile of: <h5 class="text-info" id="print"></h5></h5>
+                                                      </div>
+                                                </div>
+                                                <div class="modal-body">
+                                                      <pre>
+<h2>Name: </h2><h3 class="text-primary" id="print1"></h3>
+<h2>Grade: </h2><h3 class="text-primary" id="print2"></h3>
+<h2>Strand: </h2><h3 class="text-primary" id="print3"></h3>
+                                                      </pre>
+                                                      <div class="d-grid">
+                                                            <button type="button" class="btn btn-success btn-block" data-bs-dismiss="modal" data-bs-target="#MyModal">Confirm Enrollment</button>
+                                                      </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                      <button style="width: 100%;" type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-4 p-5 mt-5">
+                        <img src="jesus.jpg" alt="Jesus" style="height: 500px; width: 350px;">
+                  </div>
+            </div>
+      </div>
+      <div class="container-fluid mt-3 p-1 bg-danger" id="footer">
+            <div class="container-fluid">
+                  <h2 class="text-center text-light" style="padding: 20px;">Sacred Heart of Jesus Catholic School</h2>
+            </div>
+      </div>
+      <script src="index.js"></script>
+</body>
+</html>

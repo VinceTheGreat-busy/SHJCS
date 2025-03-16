@@ -1,0 +1,51 @@
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+#main {
+      height: 100%;
+}
+
+#nav {
+      height: 100vh;
+      position: sticky;
+}
+
+#navb {
+      padding: 5px;
+}
+
+li a {
+      padding: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      width: 100%;
+}
+
+#navb li a {
+      padding: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      width: 100%;
+}
+
+#navb li:hover a:hover {
+      color: lightskyblue;
+}
+
+#navi li a:hover {
+      background-color: black;
+}
+
+#about {
+      overflow-y: scroll;
+      overflow-x: hidden;
+}
+
+#ep {
+      overflow-wrap: break-word;
+}
